@@ -1,44 +1,45 @@
-import React from 'react'
+import React from 'react';
+import './FirstProducts.css';
 
-const FirstProducts = () => {
+const FirstProducts = (props) => {
   return (
     
-					<div class="product_table_row">
-						<div class="product_table_list">
-							<div class="card">
-								<div class="row center">
-									<div class="col-2 p-0">
-										<div class="product_name">Apple</div>
+					<div className="product_table_row">
+						<div className="product_table_list">
+							<div className="card">
+								<div className="row center">
+									<div className="col-2 p-0">
+										<div className="product_name">Apple</div>
 									</div>
-									<div class="col-1 p-0">
+									<div className="col-1 p-0">
 										<form action="">
-											<div class="control">
-												<button type="button" class="bttn bttn-left" id="minus">
+											<div className="control">
+												<button type="button" className="bttn bttn-left" id="minus">
 													<span>-</span>
 												</button>
 												<input
 													type="number"
-													class="input"
+													className="input"
 													id="input"
 													value="1"
 												/>
-												<button type="button" class="bttn bttn-right" id="plus">
+												<button type="button" className="bttn bttn-right" id="plus">
 													<span>+</span>
 												</button>
 											</div>
 										</form>
 									</div>
-									<div class="col-1 p-0">
-										<div class="product_price">1000 MMK</div>
+									<div className="col-1 p-0">
+										<div className="product_price">1000 MMK</div>
 									</div>
-									<div class="col-1 p-0">
-										<button class="del">x</button>
+									<div className="col-1 p-0">
+										<button className="del">x</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="total_table">
-							<table class="table">
+						<div className="total_table">
+							<table className="table">
 								<tbody>
 									<tr>
 										<th>Sub Total</th>
@@ -50,7 +51,7 @@ const FirstProducts = () => {
 											<div>
 												<input
 													type="text"
-													class="customer_table_payment_input"
+													className="customer_table_payment_input"
 												/>
 											</div>
 										</td>

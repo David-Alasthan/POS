@@ -1,0 +1,173 @@
+.col-2 {
+	flex: 2;
+}
+
+
+.control {
+	display: flex;
+	width: 90px;
+}
+.control .bttn-left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.control .input {
+	width: calc(70px * 0.5);
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border-top: 1px solid #9f8686;
+	border-bottom: 1px solid #9f8686;
+	border-left: none;
+	border-right: none;
+}
+.control a.bttn {
+	color: black;
+	text-decoration: none;
+}
+.control a.bttn,
+.control .bttn {
+	width: calc(40px * 0.5);
+	padding: 0;
+	text-align: center;
+	border: 1px solid #9f8686;
+	box-shadow: none;
+	background-color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+.control a.bttn span,
+.control .bttn span {
+	margin: auto !important;
+}
+.control .bttn-right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+
+.product_table_list .card .product_name,
+.product_table_list .card .product_price {
+	font-size: 76%;
+	color: #6d6d6d;
+}
+
+.product_table_list .card .del {
+	background-color: red;
+	float: right;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+}
+
+
+.table {
+	margin-top: 10px;
+	border-collapse: collapse;
+}
+
+.table th td {
+	border: 1px solid red;
+}
+
+table tr th,
+table tr td {
+	border: 1px solid rgb(211, 211, 211);
+	padding: 8px;
+	height: 23px;
+}
+
+table tr th {
+	width: 160px;
+	text-align: left;
+	font-size: 95%;
+}
+
+table tr td {
+	width: 280px;
+	text-align: center;
+	font-size: 90%;
+}
+
+
+.product_background_color {
+	background-color: lightblue;
+}
+
+.customer_table_payment_input {
+	height: 23px;
+	width: 95%;
+	border-radius: 5px;
+	border: 1px solid rgb(197, 197, 197);
+	color: rgb(53, 53, 53);
+	outline: none;
+}
+
+.product_tale_row {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.product_table_list {
+	height: 70%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-bottom: 3px solid rgb(255, 153, 0);
+}
+
+.total_table {
+	height: 30%;
+}
+
+.add_to_cart {
+	padding: 7px;
+	width: 100%;
+	margin-top: 10px;
+	background-color: rgb(255, 153, 0);
+	border: none;
+	border-radius: 0.25rem;
+	color: #fff;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.add_to_cart:hover {
+	background-color: rgb(255, 123, 0);
+	transition: all 0.3s ease;
+}
+
+.p-0 {
+	padding: 0;
+}
+
+.card {
+	padding: 15px;
+	background-color: #fff;
+	border: 1px solid rgb(226, 226, 226);
+	border-radius: 0.25rem;
+	margin-bottom: 5px;
+	box-shadow: 0 5px 10px rgb(230, 230, 230);
+}

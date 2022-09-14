@@ -1,10 +1,11 @@
 
 import React, {useState} from 'react';
+import FirstProducts from './components/FistPart/FirstProducts';
 import ShowPart from './components/SecondPart/ShowPart';
 import ThirdProducts from './components/ThirdPart/ThirdProducts';
 import './App.css';
 
-const allProducts = [
+const SimpleProducts = [
 	{
 		id: 'e1',
 		title: "ကြက်သား",
@@ -52,22 +53,33 @@ const allProducts = [
 
 const App = () => {
  
+	const [allProducts, setAllProducts] = useState(SimpleProducts);
+	const productHandler = (getNewProduct) => {
+		setAllProducts((preventNewProduct) => {
+			return (
+				[getNewProduct,
+				...preventNewProduct,]
+			)
+		});
+	}
+	console.log(allProducts);
 
   return (
     <div className=''>
       <div className='row'>
 
 	  		<div className="col-1 border-right p-0">
-
+				<FirstProducts />
 			</div>
 
 	  		<div className="col-2 border-right product_background_color">
 				<ShowPart products={allProducts}/>
 			</div>
 
-			<div className="col-1 ">
-				<ThirdProducts />
-			</div>
+			<ThirdProducts 
+			allProduct={allProducts}
+			productHandlers={productHandler}
+			/>
 
       </div>
     </div>

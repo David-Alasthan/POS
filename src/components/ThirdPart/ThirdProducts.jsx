@@ -1,34 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ProductsForm from './ProductsForm';
 import './ThirdProducts.css';
 
-const ThirdProducts = () => {
+const ThirdProducts = (props) => {
+    const saveNewProduct = (enterNewProducts) => {
+        const addNewProduct = {
+            ...enterNewProducts,
+            id: `e${props.allProduct.length + 1}`,
+        };
+        props.productHandlers(addNewProduct);
+    };
   return (
-    
-    <form action="" class="form-mt">
-        <div class="row center product_name mb">
-            <div class="col-1">
-                <span>Product Name</span>
-            </div>
-            :
-            <div class="col-2">
-                <input type="text" class="name_box ml-2" />
-            </div>
-        </div>
-        <div class="row center product_name mb">
-            <div class="col-1">
-                <span>Product Price</span>
-            </div>
-            :
-            <div class="col-2">
-                <input type="number" class="name_box ml-2" />
-            </div>
-        </div>
-        <div>
-            <button class="create_btn" type="button">Create</button>
-        </div>
-    </form>
+    <div className="col-1 ">
+			<ProductsForm addNewProducts={saveNewProduct} />	
+	</div>
 
   )
 }
 
-export default ThirdProducts
+export default ThirdProducts;
