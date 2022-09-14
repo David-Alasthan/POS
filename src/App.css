@@ -1,0 +1,32 @@
+
+.border-right {
+	border-right: 2px solid rgb(204, 204, 204);
+	height: 100vh;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* =====================   FirstPart   ==================== */
+
+.col-1 {
+	flex: 1;
+	padding: 0 15px;
+}
+
+.p-0 {
+	padding: 0;
+}
+
+/* =================   SecondPart   ===================== */
+
+.col-2 {
+	flex: 2;
+}
+
+.product_background_color {
+	background-color: lightblue;
+}
+
